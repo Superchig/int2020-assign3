@@ -4,8 +4,8 @@ using namespace std;
 
 class Pet {
 public:
-  Pet();
-  Pet(string name, int age, string type, double weight);
+  Pet(); // Constructor
+  Pet(string name, int age, string type, double weight); // Overloaded constructor
 
   // Accessors
   string getName();

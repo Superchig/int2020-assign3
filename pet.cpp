@@ -12,7 +12,7 @@ Pet::Pet(string name, int age, string type, double weight)
 {
   m_name = name;
   m_age = age;
-  m_type = type;
+  setType(type); // setType checks if type == "cat" or type == "dog"
   m_weight = weight;
 }
 
@@ -48,6 +48,10 @@ void Pet::setAge(int age)
 
 void Pet::setType(string type)
 {
+  if (type != "cat" && type != "dog") {
+    return;
+  }
+
   m_type = type;
 }
 
